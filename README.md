@@ -1,5 +1,5 @@
 <pre>
-sudo su; 
+sudo su
 apt -y install gcc make php-pear php-pdo php-dev build-essential unixodbc-dev;
 pecl channel-update pecl.php.net; 
 pecl install sqlsrv pdo_sqlsrv; 
