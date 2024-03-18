@@ -6,6 +6,6 @@ pecl install sqlsrv pdo_sqlsrv;
 echo 'extension=pdo_sqlsrv.so' > /etc/php/8.2/mods-available/pdo_sqlsrv.ini; 
 echo 'extension=sqlsrv.so' > /etc/php/8.2/mods-available/sqlsrv.ini; 
 phpenmod pdo_sqlsrv sqlsrv;
-apt-get purge man-db;
-apt-get install man-db;
+apt-get purge man-db -y;
+apt-get install man-db -y;
 </pre>
