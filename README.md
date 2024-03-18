@@ -6,10 +6,6 @@ pecl install sqlsrv pdo_sqlsrv;
 echo 'extension=pdo_sqlsrv.so' > /etc/php/8.2/mods-available/pdo_sqlsrv.ini; 
 echo 'extension=sqlsrv.so' > /etc/php/8.2/mods-available/sqlsrv.ini; 
 phpenmod pdo_sqlsrv sqlsrv;
-
-curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -;
-curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list > /etc/apt/sources.list.d/mssql-release.list;
-exit;
-sudo apt-get update;
-sudo ACCEPT_EULA=Y apt-get install msodbcsql17;
+apt-get purge man-db;
+apt-get install man-db;
 </pre>
